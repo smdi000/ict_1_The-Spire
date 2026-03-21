@@ -1,0 +1,48 @@
+nohup: ignoring input
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.10/site-packages/numpy/core/getlimits.py:499: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.10/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.10/site-packages/numpy/core/getlimits.py:499: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.10/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+[WARNING] ME(6289:281473293791248,MainProcess):2026-03-14-23:00:36.719.320 [mindspore/context.py:1403] For 'context.set_context', the parameter 'device_target' will be deprecated and removed in a future version. Please use the api mindspore.set_device() instead.
+[WARNING] ME(6289:281473293791248,MainProcess):2026-03-14-23:00:36.720.542 [mindspore/context.py:1403] For 'context.set_context', the parameter 'max_call_depth' will be deprecated and removed in a future version. Please use the api mindspore.set_recursion_limit() instead.
+[WARNING] ME(6289:281473293791248,MainProcess):2026-03-14-23:00:36.720.674 [mindspore/context.py:1403] For 'context.set_context', the parameter 'memory_optimize_level' will be deprecated and removed in a future version. Please use the api mindspore.runtime.set_memory() instead.
+[WARNING] ME(6289:281473293791248,MainProcess):2026-03-14-23:00:36.720.773 [mindspore/context.py:1649] For 'context.set_context', 'graph_kernel_flags' parameter is deprecated, and will be removed in the next version. Please use environ variable 'MS_DEV_GRAPH_KERNEL_FLAGS' instead.
+[WARNING] CORE(6289,ffff9bb0b010,python):2026-03-14-23:00:41.612.793 [mindspore/core/utils/ms_context.cc:537] GetJitLevel] Set jit level to O2 for rank table startup method.
+[WARNING] DEVICE(6289,ffff9bb0b010,python):2026-03-14-23:00:45.064.292 [mindspore/ccsrc/plugin/res_manager/ascend/mem_manager/ascend_vmm_adapter.h:150] CheckVmmDriverVersion] Open file /etc/ascend_install.info failed.
+[WARNING] DEVICE(6289,ffff9bb0b010,python):2026-03-14-23:00:45.064.384 [mindspore/ccsrc/plugin/res_manager/ascend/mem_manager/ascend_vmm_adapter.h:189] CheckVmmDriverVersion] Driver version is less than 24.0.0, vmm is disabled by default, drvier_version: 23.0.6
+📂 Loading datasets...
+[Dataset] ⚙️  Transposed X: (N,39,50) → (N,50,39)
+[Dataset] 📊 Loaded trajectory normalization stats from ./data/traj_stats.npz
+[Dataset] ✅ Loaded 51323 samples
+  X shape: (51323, 50, 39)
+  Y_cls shape: (51323,)
+  Y_traj shape: (51323, 72)
+[Dataset] ⚙️  Transposed X: (N,39,50) → (N,50,39)
+[Dataset] 📊 Loaded trajectory normalization stats from ./data/traj_stats.npz
+[Dataset] ✅ Loaded 12831 samples
+  X shape: (12831, 50, 39)
+  Y_cls shape: (12831,)
+  Y_traj shape: (12831, 72)
+🔁 Loading checkpoint: ./outputs_clean/model_epoch_4.ckpt
+   Resumed from epoch 4, best val loss: 0.148309
+
+🚀 Training on Ascend with batch_size=16, lr=0.0005
+   Traj weight: 0.1 | Epochs: 50
+
+[WARNING] The flag '--enable_parallel_fusion' set in 'graph_kernel_flags' will enable parallel fusion, which is an experimental feature, please check if 'graph_kernel_flags' is purposely set.
+./usr/local/Ascend/ascend-toolkit/8.1.RC1/opp/built-in/op_impl/ai_core/tbe/impl/util/util_conv2d_dynamic.py:130: UserWarning: conv2d fmap ori_range changed from [[16, 31], [320, 320], [1, 3], [25, 63]] to [[16, 31], [320, 320], [1, 3], (25, 63)].
+  warnings.warn(to_print)
+......[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+[ERROR] TBE Subprocess[task_distribute] raise error[], main process disappeared!
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 30 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
